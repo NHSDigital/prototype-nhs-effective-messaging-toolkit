@@ -20,32 +20,65 @@
 <!-- Edit the header -->
 <!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
-  {{ header({
-    "service": {
-        "name": "Prototype kit",
-        "href": "/"
+{{ header({
+  "service": {
+    "name": "Digital service manual"
+  },
+  "showNav": "true",
+  "showSearch": "true",
+  "primaryLinks": [
+      {
+        "url"  : "#",
+        "label" : "NHS service standard"
       },
-      "showNav": "false",
-      "showSearch": "false"
-    })
-  }}
+      {
+        'url' : '#',
+        'label' : 'Design system'
+      },
+      {
+        'url'  : '#',
+        'label' : 'Content style guide'
+      },
+      {
+        'url'  : '#',
+        'label' : 'Accessibility'
+      },
+      {
+        'url' : '#',
+        'label' : 'Community and contribution'
+      }
+    ]
+  })
+}}
 {% endblock %}
 
 <!-- Edit the footer -->
 <!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
-  {{ footer({
-    "links": [
-      {
-        "URL": "/",
-        "label": "Home"
-      },
-      {
-        "URL": "/page-example",
-        "label": "Example page"
-      }
-    ]
-  })}}
+{{ footer({
+  "links": [
+    {
+      "URL": "#",
+      "label": "Accessibility statement"
+    },
+    {
+      "URL": "#",
+      "label": "Contact us"
+    },
+    {
+      "URL": "#",
+      "label": "Cookies"
+    },
+    {
+      "URL": "#",
+      "label": "Privacy policy"
+    },
+    {
+      "URL": "#",
+      "label": "Terms and conditions"
+    }
+  ]
+})}}
 {% endblock %}
 
 {% block bodyEnd %}
