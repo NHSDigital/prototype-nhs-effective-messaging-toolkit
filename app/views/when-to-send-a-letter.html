@@ -5,10 +5,18 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {{ breadcrumb({
-    href: "/",
-    text: "Home"
-  }) }}
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/#",
+      text: "Home"
+    }
+  ],
+  href: "/index",
+  text: "Messaging patients"
+}) }}
 {% endblock %}
 
 {% block content %}
@@ -31,7 +39,7 @@
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/time-critical-content">Time critical content</a>
             </li>
-            <li class="app-side-nav__item">
+            <li class="app-side-nav__item app-side-nav__item--current">
               <a class="app-side-nav__link" href="/when-to-send-a-letter">When to send a letter</a>
             </li>
             <li class="app-side-nav__item">

@@ -5,10 +5,16 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {{ breadcrumb({
-    href: "/",
-    text: "Home"
-  }) }}
+
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+
+{{ breadcrumb({
+  items: [
+  ],
+  href: "/#",
+      text: "Home"
+}) }}
+
 {% endblock %}
 
 {% block content %}
