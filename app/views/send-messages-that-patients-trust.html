@@ -29,13 +29,13 @@
           <ul class="nhsuk-list app-side-nav__list">
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/decide-which-communication-channel-to-use">Communication channels for messages</a>
-            </li>
+            </li> <!-- Out of scope for first iteration 
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/send-accessible-messages">Send accessible messages</a>
-            </li>
+            </li> -->
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/send-messages-that-patients-trust">Send messages that patients trust</a>
-            </li>
+            </li> <!-- Out of scope for first iteration 
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/personalise-messages">Personalise messages</a>
             </li>
@@ -47,64 +47,8 @@
             </li>
             <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/measure-the-success-of-your-messages">Measure the success of your messages</a>
-            </li>
+            </li> -->
           </ul>
-            <!-- Out of scope for first iteration 
-            <h2 class="app-side-nav__heading">Send accessible messages</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>
-            <h2 class="app-side-nav__heading">Send messages that patients trust</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>
-            <h2 class="app-side-nav__heading">Personalise messages</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>
-            <h2 class="app-side-nav__heading">How to reach digitally excluded patients</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>
-            <h2 class="app-side-nav__heading">Suggested wording for common messages</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>
-            <h2 class="app-side-nav__heading">Measure the success of your messages</h2>
-            <ul class="nhsuk-list app-side-nav__list">
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 1</a>
-              </li>
-              <li class="app-side-nav__item">
-                <a class="app-side-nav__link" href="#">Item 2</a>
-              </li>
-            </ul>-->
-            
         </nav>
       </div>
     </div>
@@ -112,8 +56,57 @@
 
       <!-- Add your content here -->
       <h1 class="nhsuk-heading-xl">Send messages that patients trust</h1>
-      <p class="nhsuk-body-l">Content TBC</p>
-      <p class="nhsuk-body">Content TBC</p>
+      <p class="nhsuk-body-l">To help patients act on the messages we send them, it’s important that they can trust that messages are safe, secure and have genuinely been sent by the NHS. </p>
+      
+
+      <h2 class="nhsuk-heading-l">Sender names on text messages</h2>
+      <p class="nhsuk-body">The text address which appears on a text message in place of the sending telephone number is called a SenderID.</p>
+      <p class="nhsuk-body">Using an appropriate SenderID can help build trust with message recipients. </p>
+      <p class="nhsuk-body">You should use <a href="https://mobileecosystemforum.com/sms-senderid-protection-registry/">MEF-registered (official) SenderIDs.</a></p>
+      
+      {% from 'tables/macro.njk' import table %}
+
+{{ table({
+  panel: false,
+  caption: "Example of an appropriate SenderID",
+  firstCellIsHeader: false,
+  head: [
+    {
+      text: "Do not use"
+    },
+    {
+      text: "Use"
+    }
+  ],
+  rows: [
+    [
+      {
+        text: "[+4478…] sent you a message"
+      },
+      {
+        text: "[Servicename] sent you a message"
+      }
+    ]
+  ]
+}) }}
+ 
+      <p class="nhsuk-body"><a href="https://www.ncsc.gov.uk/guidance/business-communications-sms-and-telephone-best-practice#section_3:~:text=grounds%20for%20concern.-,SenderID,-considerations">Find out more about selecting appropriate SenderIDs</a></p>
+      
+      <h2 class="nhsuk-heading-l">Email addresses</h2>
+      <p class="nhsuk-body"></p>
+
+      <h2 class="nhsuk-heading-l">Email subject lines</h2>
+      <p class="nhsuk-body"></p>
+
+      <h2 class="nhsuk-heading-l">Links</h2>
+      <p class="nhsuk-body"></p>
+
+      <h2 class="nhsuk-heading-l">Patient consent for you to send messages </h2>
+      <p class="nhsuk-body">Make sure your messages follow UK GDPR and data protection legislation. <a href="https://transform.england.nhs.uk/information-governance/guidance/what-is-and-isnt-direct-marketing/">Find out what types of healthcare messages are considered direct marketing.</a></p>
+
+      <h2 class="nhsuk-heading-l"></h2>
+      <p class="nhsuk-body"></p>
+
 
     </div>  
 
