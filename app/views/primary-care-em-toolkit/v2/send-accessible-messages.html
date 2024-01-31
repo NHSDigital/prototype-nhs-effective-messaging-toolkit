@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-row"> 
     <div class="nhsuk-grid-column-one-third">
       <div class="app-pane__side-bar">
         <nav class="app-side-nav">
@@ -28,15 +28,15 @@
           <h2 class="app-side-nav__heading">Messaging patients</h2>
           <ul class="nhsuk-list app-side-nav__list">
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/primary-care-em-toolkit/communication-channels-for-messages">Communication channels for messages</a>
-            </li>
-            <!-- Out of scope for first iteration<li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/send-accessible-messages">Send accessible messages</a>
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/communication-channels-for-messages">Communication channels for messages</a>
             </li>
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/send-messages-that-patients-trust">Send messages that patients trust</a>
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/send-accessible-messages">Send accessible messages</a>
             </li>
             <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/send-messages-that-patients-trust">Send messages that patients trust</a>
+            </li>
+            <!-- out of scope for this version <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/personalise-messages">Personalise messages</a>
             </li>
             <li class="app-side-nav__item">
@@ -49,7 +49,7 @@
               <a class="app-side-nav__link" href="/measure-the-success-of-your-messages">Measure the success of your messages</a>
             </li> -->
           </ul>
-          <!-- Out of scope for first iteration 
+          <!-- Out of scope for this version 
           <h2 class="app-side-nav__heading">Send accessible messages</h2>
           <ul class="nhsuk-list app-side-nav__list">
             <li class="app-side-nav__item">
@@ -147,40 +147,31 @@
     <p>All organisations that provide NHS care are [legally] required to follow the Accessible Information Standard. The standard outlines how you must meet the information and communication support needs of people with a disability, impairment or sensory loss. This includes patients and service users, and their carers and parents.</p>
     <h3>Who the Accessible Information Standard might apply to</h3>
     <p>You must ask anyone who uses your services and has a disability, impairment or sensory loss if they have any communication or information needs.</p>
-    <details class="nhsuk-details nhsuk-expander">
-      <summary class="nhsuk-details__summary">
-        <span class="nhsuk-details__summary-text">
-          Patient codes that might indicate an additional communication need
-        </span>
-      </summary>
-      <div class="nhsuk-details__text">
+    <p>Patient codes that might indicate an additional communication need:</p>
         <ul>
-          <li>Registered blind or partially sighted</li>
-          <li>Hearing loss</li>
-          <li>Hearing aid user</li>
-          <li>Registered deaf</li>
-          <li>Sensori-neural deafness</li>
-          <li>Autistic spectrum disorder</li>
-          <li>Learning disability</li>
-          <li>Aphasia</li>
+          <li>registered blind or partially sighted</li>
+          <li>hearing loss</li>
+          <li>hearing aid user</li>
+          <li>registered deaf</li>
+          <li>sensori-neural deafness</li>
+          <li>autistic spectrum disorder</li>
+          <li>learning disability</li>
+          <li>aphasia</li>
         </ul>
-      </div>
-    </details>
     <p>However, you should base decisions on a patient's communication needs, rather than their diagnosis.</p>
     <div class="nhsuk-inset-text">
       <span class="nhsuk-u-visually-hidden">Information: </span>
       <p>“If people cannot get information about their healthcare they understand, this can have a significant impact on their mental health and can lead to them missing doctor’s appointments or taking the wrong medication, putting them in danger." — Louise Ansari, national director at Healthwatch England </p>
     </div>
 
-    <h3>What you need to do</h3>
-    <p>You must:</p>
-    <ul>
-      <li>ask them to define their needs, including the format of messages they will be able to access and understand</li>
-      <li>record their needs (not the disability, impairment or sensory loss) in a clear, unambiguous and standardised way</li>
-      <li>make sure their needs are flagged and easily visible to anyone accessing the record</li>
-      <li>only send messages to the patient in a format that meets their needs, including any automatically generated messages</li>
-      <li>share these needs as part of existing data sharing processes, for example when referring a patient, so they will continue to receive accessible messages</li>
-    </ul>
+    <h3>How the Accessible Information Standard applies to messaging</h3>
+    <ol>
+      <li>Ask people to define their communication needs, including the format of messages they will be able to access and understand.</li>
+      <li>Record their needs (not the disability, impairment or sensory loss) in a clear, unambiguous and standardised way.</li>
+      <li>Flag these needs so they are easily visible to anyone accessing the record.</li>
+      <li>Share these needs as part of existing data sharing processes, for example when referring a patient, so they will continue to receive accessible messages.</li>
+      <li>Only send messages in a format that meets these needs, including any automatically generated messages.</li>
+    </ol>
       <p><a href="https://www.england.nhs.uk/about/equality/equality-hub/patient-equalities-programme/equality-frameworks-and-information-standards/accessibleinfo">Find out more about the accessible information standard</a>.</p>
     <h2>Digital formats</h2>
     <p>Many people with communication needs use assistive technology to help them to understand written information.</p>
@@ -220,30 +211,8 @@
   <li><a href="https://service-manual.nhs.uk/content/inclusive-content/skin-symptoms">skin symptoms</a></li>
 </ul>
 <p>The Learning disability and autism programme has also created <a href="https://www.england.nhs.uk/learning-disabilities/about/get-involved/involving-people/making-information-and-the-words-we-use-accessible/">guidance about how to talk about people with a learning disability or autism</a>.</p>  
-<h2>Inclusion health groups</h2>
-<p>People in inclusion health groups include:</p>
-<ul>
-  <li>people who experience homelessness</li>
-  <li>people with drug and alcohol dependence</li>
-  <li>vulnerable migrants and refugees</li>
-  <li>Gypsy, Roma, and Traveller communities</li>
-  <li>people in contact with the justice system</li>
-  <li>victims of modern slavery</li>
-  <li>sex workers</li>
-  <li>other marginalised groups</li>
-</ul>
-<p>People in these groups often face discrimination and stigma. This can result in poor access to healthcare services and make it difficult for them to look after their health and wellbeing. </p>
-<p>People in these groups are more likely to have low levels of literacy, low or no fluency levels of English and to experience digital exclusion. They may also have no fixed address or no phone.</p>  
-<p><a href="/reach-digitally-excluded-patients">Find out more about reaching digitally excluded patients</a>.</p>
-<h3>Use a personalised approach</h3>
-<p>If you know someone is in an inclusion health group:</p>
-<ul> 
-<li>ask them if they have any communication preferences when they first contact your service</li>
-<li>record these preferences and make sure they are flagged to relevant staff to ensure continuity of care and ongoing support</li>
-<li>translate message content, if needed</li>
-</ul>
 <h2>Translating message content into other languages</h2>
-<p>You must make all possible efforts to meet patients' communication needs in languages other than English.</p>
+<p>Make all possible efforts to meet patients' communication needs in languages other than English.</p>
 <p>Ask patients to tell you their preferred written language. Record this preference in their health record and include this information when referring patients to other healthcare professionals.</p>
 <p>Translate message content into a patient's preferred language whenever possible.</p>
 <p>You should:</p>

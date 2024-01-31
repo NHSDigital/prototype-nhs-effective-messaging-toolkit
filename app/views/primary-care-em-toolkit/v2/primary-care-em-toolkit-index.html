@@ -5,18 +5,16 @@
 {% endblock %}
 
 {% block beforeContent %}
+
 {% from 'breadcrumb/macro.njk' import breadcrumb %}
 
 {{ breadcrumb({
   items: [
-    {
-      href: "/#",
-      text: "Home"
-    }
   ],
-  href: "/index",
-  text: "Messaging patients"
+  href: "/#",
+      text: "Home"
 }) }}
+
 {% endblock %}
 
 {% block content %}
@@ -28,15 +26,15 @@
           <h2 class="app-side-nav__heading">Messaging patients</h2>
           <ul class="nhsuk-list app-side-nav__list">
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v1/communication-channels-for-messages">Communication channels for messages</a>
-            </li>
-            <!-- Out of scope for first iteration<li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/send-accessible-messages">Send accessible messages</a>
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/communication-channels-for-messages">Communication channels for messages</a>
             </li>
             <li class="app-side-nav__item">
-              <a class="app-side-nav__link" href="/send-messages-that-patients-trust">Send messages that patients trust</a>
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/send-accessible-messages">Send accessible messages</a>
             </li>
             <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v2/send-messages-that-patients-trust">Send messages that patients trust</a>
+            </li>
+            <!-- out of scope for this version <li class="app-side-nav__item">
               <a class="app-side-nav__link" href="/personalise-messages">Personalise messages</a>
             </li>
             <li class="app-side-nav__item">
@@ -49,7 +47,7 @@
               <a class="app-side-nav__link" href="/measure-the-success-of-your-messages">Measure the success of your messages</a>
             </li> -->
           </ul>
-          <!-- Out of scope for first iteration 
+          <!-- Out of scope for this version 
           <h2 class="app-side-nav__heading">Send accessible messages</h2>
           <ul class="nhsuk-list app-side-nav__list">
             <li class="app-side-nav__item">
@@ -111,9 +109,10 @@
     <div class="nhsuk-grid-column-two-thirds"> 
 
       <!-- Add your content here -->
-      <h1 class="nhsuk-heading-xl">Send messages that patients trust</h1>
-      <p class="nhsuk-body-l">Content TBC</p>
-      <p class="nhsuk-body">Content TBC</p>
+      <h1 class="nhsuk-heading-xl">Messaging patients</h1>
+      <p class="nhsuk-body-l">How to send messages that meet patients' needs and are cost-effective for the NHS.</p>
+      <p class="nhsuk-body">This guidance is for anyone sending messages to NHS patients.
+      <p>This is new guidance your feedback will help us to improve it.</p>
 
     </div>  
 
