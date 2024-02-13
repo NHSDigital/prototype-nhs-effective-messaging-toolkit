@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Messaging patients
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/#",
+      text: "Home"
+    }
+  ],
+  href: "/primary-care-em-toolkit/v3/primary-care-em-toolkit-index",
+  text: "Messaging patients"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <div class="app-pane__side-bar">
+        <nav class="app-side-nav">
+        
+          <h2 class="app-side-nav__heading">Messaging patients</h2>
+          <ul class="nhsuk-list app-side-nav__list">
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/communication-channels-for-messages">Communication channels for messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-accessible-messages">Send accessible and inclusive messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust">Send messages that patients trust</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-messages-that-are-appropriate-and-relevant">Send messages that are appropriate and relevant</a>
+            </li>
+            <!-- out of scope for this version 
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/reach-digitally-excluded-patients">Reach digitally excluded patients</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/suggested-wording-for-common-messages">Suggested wording for common messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/measure-the-success-of-your-messages">Measure the success of your messages</a>
+            </li> -->
+          </ul>
+          
+      </nav>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds"> 
+
+      <!-- Add your content here -->
+      <h1 class="nhsuk-heading-xl">Messaging patients</h1>
+      <p class="nhsuk-body-l">How to send messages that meet patients' needs and are cost-effective for the NHS.</p>
+      <p class="nhsuk-body">This guidance is for anyone sending messages to NHS patients.
+      <p>This is new guidance and your feedback will help us to improve it.</p>
+
+    </div>  
+
+  </div>
+{% endblock %}
