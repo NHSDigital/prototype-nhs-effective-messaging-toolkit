@@ -120,10 +120,10 @@
     padding-top: 4px;
   }
   .app-side-nav__item--current {
-    border-left: 4px solid #005eb8;
     margin-left: -12px;
     padding-left: 8px;
-  }
+    border-left: 4px solid rgb(0, 94, 184);
+}
   .app-side-nav__item--current .app-side-nav__link {
     font-weight: 600;
   }
@@ -265,4 +265,43 @@
 h1 + .nhsuk-lede-text,
 h1 + .nhsuk-lede-text--small {
   margin-top: -8px;
+}
+
+.featured-list {
+  list-style: none;
+  margin: 24px 0 32px;
+  padding-left: 0;
+}
+
+.featured-list--item {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  padding-left: 64px;
+}
+
+.featured-list--item__content {
+  max-width: 99.99%;
+}
+
+.featured-list--item__heading {
+  align-items: center;
+  display: flex;
+  margin-top: 0px;
+  padding-top: 16px;
+  position: relative;
+  border-top: 4px solid rgb(0, 94, 184);
+}
+
+.featured-list--item {
+  display: flex;
+  margin-bottom: 40px;
+  padding-left: 64px;
+}
+
+.featured-list--item__number {
+  display: block;
+  left: -64px;
+  position: absolute;
+  margin: 0px;
 }
