@@ -1,0 +1,160 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Messaging patients
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'breadcrumb/macro.njk' import breadcrumb %}
+
+{{ breadcrumb({
+  items: [
+    {
+      href: "/primary-care-em-toolkit/v3/primary-care-em-toolkit-index",
+      text: "Home"
+    }
+  ],
+  href: "/primary-care-em-toolkit/v3/primary-care-em-toolkit-index",
+  text: "Messaging patients"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-third">
+      <div class="app-pane__side-bar">
+        <nav class="app-side-nav">
+          <h2 class="app-side-nav__heading">Messaging patients</h2>
+          <ul class="nhsuk-list app-side-nav__list">
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/communication-channels-for-messages">Communication channels for messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-accessible-messages">Send accessible and inclusive messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust">Send messages that patients trust</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/primary-care-em-toolkit/v3/send-messages-that-are-appropriate-and-relevant">Send messages that are appropriate and relevant</a>
+            </li>
+            <!-- out of scope for this version 
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/reach-digitally-excluded-patients">Reach digitally excluded patients</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/suggested-wording-for-common-messages">Suggested wording for common messages</a>
+            </li>
+            <li class="app-side-nav__item">
+              <a class="app-side-nav__link" href="/measure-the-success-of-your-messages">Measure the success of your messages</a>
+            </li> -->
+          </ul>
+          
+      </nav>
+      </div>
+    </div>
+    <div class="nhsuk-grid-column-two-thirds"> 
+
+      <!-- Add your content here -->
+      <span class="nhsuk-caption-l">
+        Content guide
+        
+        <span class="nhsuk-u-visually-hidden"> - </span>
+      </span>
+      <h1 class="nhsuk-heading-xl">Messaging patients effectively</h1>
+      <p class="nhsuk-lede-text">This guide outlines some essential requirements and best practice guidance for sending effective messages to patients. It's designed for anyone who sends messages to patients in the NHS.</p>
+
+      <ol class="featured-list">
+
+        <li class="featured-list--item">
+          <div class="featured-list--item__content">
+            <span class="featured-list--item__number featured-list--item__number--mobile nhsuk-heading-xl">1</span>
+            <h2 class="featured-list--item__heading nhsuk-heading-l">
+              <span class="featured-list--item__number nhsuk-heading-xl nhsuk-u-margin-bottom-1">1</span>
+              Choose the right communication channel
+            </h2>
+            <h3>Essential</h3>
+            <ul>
+              <li>Use <a href="/primary-care-em-toolkit/v3/communication-channels-for-messages#:~:text=inclusive%20messages.-,App%20messages,-Sending%20a%20message">the NHS App to send non-urgent messages</a> securely at no cost.</li>
+              <li>Send messages in a <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=Alternative%20formats%20(accessible%20formats)">format that can be accessed by people with a recorded communication need.</a></li>
+              </ul>
+            <h3>Best practice</h3>
+            <ul>
+              <li>If you need to send an SMS, make sure you <a href="/primary-care-em-toolkit/v3/communication-channels-for-messages#:~:text=up%20to%20date.-,Text%20message%20fragments,-Text%20messages%20are">use as few message fragments as possible</a> to reduce costs. </li>
+            </ul>
+          </div>
+        </li>
+    
+    
+        <li class="featured-list--item">
+          <div class="featured-list--item__content">
+            <span class="featured-list--item__number featured-list--item__number--mobile nhsuk-heading-xl">2</span>
+            <h2 class="featured-list--item__heading nhsuk-heading-l">
+              <span class="featured-list--item__number nhsuk-heading-xl nhsuk-u-margin-bottom-1">2</span>
+              Ensure messages are accessible and inclusive
+            </h2>
+            <h3>Essential</h3>
+            <ul>
+              <li>Use the <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=Use%20our%20content%20guide%20to%20write%20messages%20that%20are%3A">NHS Content guide when creating new messages </a>to make language inclusive.</li>
+              <li>Make your messages available in <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=Alternative%20formats%20(accessible%20formats)">alternative formats (also known as accessible formats).</a></li>
+              <li>Make sure you're familiar with the <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=of%20people%20misunderstanding-,The%20Accessible%20Information%20Standard,-All%20organisations%20that">NHS Accessible Information Standard.</a></li>
+              </ul>
+            <h3>Best practice</h3>
+            <ul>
+              <li>Make all possible efforts to <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=Translating%20message%20content%20into%20other%20languages">translate your messages into other languages.</a></li>
+            </ul>
+          </div>
+        </li>
+    
+    
+        <li class="featured-list--item">
+          <div class="featured-list--item__content">
+            <span class="featured-list--item__number featured-list--item__number--mobile nhsuk-heading-xl">3</span>
+            <h2 class="featured-list--item__heading nhsuk-heading-l">
+              <span class="featured-list--item__number nhsuk-heading-xl nhsuk-u-margin-bottom-1">3</span>
+              Send messages that patients can trust
+            </h2>
+            <h3>Essential</h3>
+            <ul>
+              <li>Do not use a <a href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust#:~:text=you%20send%20them-,Links,-Do%20not%20use">third-party link shortening service</a> to reduce the length of link.</li>
+              <li>Use an <a href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust#:~:text=Sender%20names%20on%20text%20messages">appropriate SenderID</a> (the text which appears instead of the sending telephone number).</li>
+              <li>Take steps to <a href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust#:~:text=Protecting%20people%20from%20spam%20or%20phishing">protect people from spam or phishing.</a></li>
+              <li>Make sure your messages <a href="/primary-care-em-toolkit/v3/send-messages-that-patients-trust#:~:text=Patient%20consent%20for%20you%20to%20send%20messages">follow UK GDPR and data protection legislation.</a></li>
+              </ul>
+            <h3>Best practice</h3>
+            <ul>
+              <li>Use the <a href="/primary-care-em-toolkit/v3/send-accessible-messages#:~:text=Use%20our%20content%20guide%20to%20write%20messages%20that%20are%3A">NHS Content guide when creating new messages</a> so they have a consistent style.</li> 
+              <li>Always ask someone else to check your messages for errors before you send them.</li>
+            </ul>
+          </div>
+        </li>
+    
+        <li class="featured-list--item">
+          <div class="featured-list--item__content">
+            <span class="featured-list--item__number featured-list--item__number--mobile nhsuk-heading-xl">4</span>
+            <h2 class="featured-list--item__heading nhsuk-heading-l">
+              <span class="featured-list--item__number nhsuk-heading-xl nhsuk-u-margin-bottom-1">4</span>
+              Ensure messages are appropriate and relevant to the recipient
+            </h2>
+            <h3>Essential</h3>
+            <ul>
+              <li>Use the information you have available to <a href="/primary-care-em-toolkit/v3/send-messages-that-are-appropriate-and-relevant#:~:text=Send%20relevant%20messages%20to%20specific%20groups%20of%20people">identify specific groups of people.</a></li>
+              <li>Tailor message content so it's relevant to those specific groups.</li>
+              <li>Avoid using messages to send general information to very large groups of patients - consider other options like a website banner or a post on social media.</li>
+              <li><a href="/primary-care-em-toolkit/v3/send-messages-that-are-appropriate-and-relevant#:~:text=Confidential%20content">Do not include confidential information</a>, as messages could be seen by other people.</li>
+              </ul>
+            <h3>Best practice</h3>
+            <ul>
+              <li>Consider how messages make patients feel and <a href="https://service-manual.nhs.uk/content/voice-and-tone">use exisiting voice and tone guidance</a> to make messages more personal, trustworthy and empowering to patients.</li>
+            </ul>
+          </div>
+        </li>
+
+
+
+    </div>  
+
+  </div>
+{% endblock %}
+
