@@ -85,6 +85,33 @@
         <li>concise, with short sentences and paragraphs</li>
         <li>in the active voice, not passive voice</li>
       </ul>
+
+      {% from 'tables/macro.njk' import table %}
+
+      {{ table({
+        panel: false,
+        caption: "xx",
+        firstCellIsHeader: false,
+        head: [
+          {
+            text: "You should say:"
+          },
+          {
+            text: "You should not say:"
+          }
+        ],
+        rows: [
+          [
+            {
+              text: "You have a telephone appointment today. We cannot give you an exact time for the call, so keep your phone close by."
+            },
+            {
+              text: "You have been booked in for a telephone consultation today and, due to it not being possible to specify an exact time, it is of the utmost importance you keep your phone in your vicinity."
+            }
+          ]
+        ]
+      }) }}
+
       <p>Specific pages of the content guide tell you how to:</p>
       <ul>
         <li><a href="https://service-manual.nhs.uk/content/a-to-z-of-nhs-health-writing">use words and phrases that patients understand</a></li>
